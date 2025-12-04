@@ -1,0 +1,30 @@
+{
+  "name": "notesproject",
+  "version": "1.0.0",
+  "description": "Invisible presentation notes",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "Andrew Panimdim",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^39.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.transparentnotes.app",
+    "productName": "notesproject",
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    },
+    "files": [
+      "main.js",
+      "index.html",
+      "style.css",
+      "script.js"
+    ]
+  }
+}

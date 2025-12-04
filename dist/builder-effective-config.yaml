@@ -1,0 +1,15 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.transparentnotes.app
+productName: notesproject
+win:
+  target: nsis
+  icon: icon.ico
+files:
+  - filter:
+      - main.js
+      - index.html
+      - style.css
+      - script.js
+electronVersion: 39.2.5

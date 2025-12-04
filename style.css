@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: transparent;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.title-bar {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px 12px 0 0;
+  cursor: move;
+  -webkit-app-region: drag;
+}
+
+.drag-area {
+  color: white;
+  font-size: 14px;
+  user-select: none;
+}
+
+.close-btn {
+  -webkit-app-region: no-drag;
+  background: rgba(255, 59, 48, 0.8);
+  border: none;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  transition: background 0.2s;
+}
+
+.close-btn:hover {
+  background: rgba(255, 59, 48, 1);
+}
+
+#notes {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 15px;
+  line-height: 1.6;
+  resize: none;
+  outline: none;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+#notes::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.controls {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px 15px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-radius: 0 0 12px 12px;
+}
+
+.controls button {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.2s;
+}
+
+.controls button:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.controls input[type="range"] {
+  flex: 1;
+  cursor: pointer;
+}
+
+.controls label {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+}
