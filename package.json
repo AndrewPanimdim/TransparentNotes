@@ -10,7 +10,7 @@
   "author": "Andrew Panimdim",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^39.0.0",
+    "electron": "^39.2.5",
     "electron-builder": "^24.13.3"
   },
   "build": {
